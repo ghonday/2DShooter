@@ -27,7 +27,12 @@ public class Game extends Canvas implements Runnable {
 
     public void beginGame() {
         handle.addObject(new Player(100, 300, Type.player, handle));
-        handle.addObject(new Enemy(100, 450, Type.smallEnemy, handle));
+        handle.addObject(new Enemy(100, 300, Type.smallEnemy, handle));
+        
+        // Testing Adding Enemies
+     /* handle.addObject(new Enemy(x, y, Type.(object), handle)); */
+        handle.addObject(new Enemy(200, 300, Type.mediumEnemy, handle));
+        handle.addObject(new Enemy(300, 300, Type.largeEnemy, handle));
     }
 
     public void start() {

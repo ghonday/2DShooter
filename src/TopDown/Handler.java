@@ -59,6 +59,14 @@ public class Handler {
             temp.render(g);
         }
     }
+    
+    public void renderMed(Graphics g){
+        for(int i = 0; i < list.size(); i++){
+            GameObject temp = list.get(i);
+
+            temp.render(g);
+        }
+    }
 
     public void addObject(GameObject object){
         list.add(object);
